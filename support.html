@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>고객 지원 - 어디갔지(MEmory)</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.7; color: #222; }
+  h1 { font-size: 28px; margin-top: 0; }
+  h2 { font-size: 22px; margin-top: 36px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+  h3 { font-size: 17px; margin-top: 28px; color: #333; }
+  ol li, ul li { margin: 6px 0; }
+  code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+  .callout { background: #fff8e1; border-left: 4px solid #ffb300; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  .callout.warning { background: #ffebee; border-left-color: #e53935; }
+  .callout.info { background: #e3f2fd; border-left-color: #1e88e5; }
+  .step { background: #fafafa; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px 16px; margin: 10px 0; }
+  .step strong { color: #1565c0; }
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee; color: #888; font-size: 14px; }
+  a { color: #1565c0; }
+</style>
+</head>
+<body>
+
+<h1>어디갔지 (MEmory)</h1>
+
+<p>방문한 장소, 다가올 약속, 매일의 루틴을 기록하는 일상 아카이브</p>
+
+<h2>📖 자주 묻는 질문</h2>
+
+<h3>어떤 앱인가요?</h3>
+<p>'어디갔지'는 다녀온 장소, 앞으로의 약속, 매일의 루틴, 그리고 일기를 한 곳에 기록할 수 있는 일상 아카이브 앱입니다. 외출 모드와 홈 모드를 구분해 집 밖과 집 안의 시간을 모두 담을 수 있습니다.</p>
+
+<h3>로그인이 필요한가요?</h3>
+<p>아니요. 어디갔지는 별도의 회원가입이나 로그인 없이 사용할 수 있습니다. 모든 기록은 이용자의 기기 안에만 저장됩니다.</p>
+
+<h3>내 데이터는 어디에 저장되나요?</h3>
+<p>모든 기록은 이용자의 기기 내부에만 저장됩니다. 외부 서버로 전송되거나 다른 사람에게 공유되지 않습니다. 앱을 삭제하면 저장된 모든 정보도 함께 삭제됩니다.</p>
+
+<h3>외출 모드와 홈 모드는 무엇인가요?</h3>
+<p>외출 모드는 집 밖에서의 활동(다녀온 장소, 만남, 외부 일정)을, 홈 모드는 집 안에서의 시간(휴식, 루틴, 집안일 등)을 기록하는 모드입니다. 두 모드를 따로 보거나 통합해서 한 번에 볼 수 있어 일과 휴식을 균형 있게 돌아볼 수 있습니다.</p>
+
+<h3>일기는 어떻게 생성되나요?</h3>
+<p>하루 동안 기록한 장소, 약속, 루틴 등을 모아 자동으로 일기 형태로 정리해드립니다. 직접 글을 쓰지 않아도 그날의 흐름을 한눈에 볼 수 있습니다.</p>
+
+<h3>사진을 첨부하면 어떻게 저장되나요?</h3>
+<p>사진은 이용자의 기기 내부, 앱 전용 저장 공간에만 저장됩니다. 외부로 자동 업로드되거나 사진 라이브러리의 다른 사진과 섞이지 않습니다. 사진 첨부 시 사진 라이브러리 접근 권한이 필요하며, 권한은 첨부 시점에만 사용됩니다.</p>
+
+<h3>알림은 어떻게 동작하나요?</h3>
+<p>앱 내부에 종 아이콘이 있고, 그 안의 패널에서 일정ㆍ루틴 관련 알림을 확인할 수 있습니다. <strong>현재 1.0 버전에서는 iOS 시스템 알림 (잠금 화면이나 알림 센터에 뜨는 알림)은 제공하지 않습니다.</strong> 앱을 열어 종 아이콘을 누르면 모든 알림을 확인할 수 있습니다. iOS 시스템 알림 연동은 다음 버전에서 검토 중입니다.</p>
+
+<h3>공유 기능은 어떻게 동작하나요?</h3>
+<p>일일 기록을 이미지로 캡처하거나 텍스트로 요약하여 iOS 시스템 공유 시트를 통해 카카오톡, 메일, 사진 앱 등 원하는 곳으로 보낼 수 있습니다. 공유 콘텐츠가 우리 서버나 외부로 자동 전송되는 일은 없으며, 보낼 곳은 이용자가 시스템 화면에서 직접 선택합니다.</p>
+
+<h3>기록한 데이터를 백업할 수 있나요?</h3>
+<p>현재 1.0 버전은 기기 내부 저장만 지원합니다. 클라우드 백업 및 다기기 동기화 기능은 추후 업데이트에서 검토 중입니다. 새 기기로 옮기시기 전에는 데이터 이전이 어려우니 참고 부탁드립니다.</p>
+
+<h2>🗺️ 지도 기능 안내</h2>
+
+<h3>지도 기능 없이도 앱을 사용할 수 있나요?</h3>
+<p>네, 가능합니다. 지도 없이도 장소를 텍스트로 직접 입력해서 기록할 수 있으며, 메모ㆍ일기ㆍ루틴ㆍ캘린더ㆍ검색 등 다른 모든 기능은 정상적으로 동작합니다.</p>
+
+<h3>지도 위에 핀을 찍어서 장소를 저장하고 싶어요.</h3>
+<p>지도 기능은 카카오 지도 API를 사용합니다. 이용하려면 카카오 개발자센터에서 직접 발급받으신 <strong>JavaScript 앱 키</strong>를 앱 설정 화면에 입력해 주세요. 발급 절차는 아래의 별도 섹션을 참고해 주세요.</p>
+
+<h3>카카오 키 없이 장소 이름을 검색하면 어떻게 되나요?</h3>
+<p>카카오 키가 등록되어 있지 않은 경우, 장소 이름 검색은 <strong>OpenStreetMap</strong>의 무료 공개 데이터로 자동 대체됩니다. 검색 결과 화면 하단에 "장소 데이터 © OpenStreetMap contributors" 표시가 함께 노출됩니다. 한국 지역은 카카오 지도가 더 정확하므로, 한국에서 자주 쓰신다면 카카오 키 발급을 권장합니다.</p>
+
+<h2>🔑 카카오 지도 API 키 발급 안내</h2>
+
+<div class="callout warning">
+  <strong>중요 — 키 종류 확인</strong><br>
+  카카오 개발자센터에는 여러 종류의 키가 있습니다. 어디갔지에서 사용하는 것은 <strong>"JavaScript 키"</strong> 입니다. REST API 키나 네이티브 앱 키를 입력하면 지도가 동작하지 않습니다.
+</div>
+
+<h3>발급 단계</h3>
+
+<div class="step"><strong>1단계 — 카카오 개발자센터 접속</strong><br>
+<a href="https://developers.kakao.com" target="_blank">developers.kakao.com</a>에 접속해 카카오 계정으로 로그인합니다.
+</div>
+
+<div class="step"><strong>2단계 — 애플리케이션 추가</strong><br>
+상단 메뉴에서 <code>내 애플리케이션</code> → <code>애플리케이션 추가하기</code> 클릭<br>
+다음 정보를 입력합니다:
+<ul>
+  <li><strong>앱 이름</strong>: 예) "내 어디갔지" (자유롭게 입력)</li>
+  <li><strong>회사명/사업자명</strong>: 개인 사용이면 본인 이름을 입력해도 됩니다</li>
+  <li><strong>카테고리</strong>: 적당한 것 선택 (예: 유틸리티)</li>
+</ul>
+</div>
+
+<div class="step"><strong>3단계 — JavaScript 키 확인</strong><br>
+생성된 앱을 클릭하면 좌측 메뉴에 <code>앱 키</code> 항목이 보입니다. 클릭하면 네이티브 앱 키, REST API 키, JavaScript 키, Admin 키 네 가지가 나타나는데, 그중 <strong>"JavaScript 키"</strong>의 문자열을 복사합니다. 이 값이 어디갔지에 입력할 키입니다.
+</div>
+
+<div class="step"><strong>4단계 — 플랫폼 등록 (필수)</strong>
+<div class="callout warning" style="margin-top:8px;">
+  이 단계를 건너뛰면 키를 입력해도 지도가 동작하지 않습니다.
+</div>
+좌측 메뉴 <code>앱 설정</code> → <code>플랫폼</code> 클릭<br>
+<code>Web 플랫폼 등록</code> 클릭 후 사이트 도메인 칸에 다음을 입력합니다:
+<ul>
+  <li><code>http://localhost</code></li>
+</ul>
+어디갔지는 모바일 앱이지만, 내부적으로 WebView를 통해 카카오 지도를 표시합니다. 위 한 줄만 등록하면 정상적으로 동작합니다.
+</div>
+
+<div class="step"><strong>5단계 — 어디갔지 앱에 입력</strong><br>
+앱을 실행하고 설정 화면을 엽니다. "카카오 지도 API 키" 항목에 3단계에서 복사한 JavaScript 키를 붙여넣고 저장합니다. 즉시 지도 기능이 활성화됩니다.
+</div>
+
+<div class="callout info">
+키 발급은 무료이며, 개인 용도라면 별도 비용이 발생하지 않습니다. 카카오 지도 API의 일일 무료 사용량은 개인 사용자가 평소 사용 수준을 훨씬 초과합니다.
+</div>
+
+<h2>🔧 지도 트러블슈팅</h2>
+
+<h3>키를 입력했는데 지도 영역이 비어있어요.</h3>
+<p>가장 흔한 원인은 <strong>플랫폼(도메인) 등록 누락</strong>입니다. 위 4단계를 다시 확인해 주세요. <code>http://localhost</code>를 추가했는지가 핵심입니다.</p>
+
+<h3>"Kakao Maps 초기화 실패" 메시지가 떠요.</h3>
+<p>키 자체가 잘못 입력되었을 가능성이 큽니다. 다음을 확인해 주세요:</p>
+<ul>
+  <li>JavaScript 키가 맞는지 (REST API 키나 네이티브 앱 키가 아닌지)</li>
+  <li>키 문자열에 공백이나 줄바꿈이 섞이지 않았는지</li>
+  <li>카카오 개발자센터에서 앱이 "비활성화" 상태가 아닌지</li>
+</ul>
+
+<h3>"스크립트 로드 실패" 메시지가 떠요.</h3>
+<p>인터넷 연결 상태를 확인해 주세요. 카카오 지도 SDK는 인터넷이 있어야 로드됩니다. 비행기 모드, 와이파이 미연결, VPN 차단 등을 확인해 주세요. 도메인 등록을 빠뜨린 경우에도 이 오류가 표시될 수 있습니다.</p>
+
+<h3>장소 검색은 되는데 지도가 빈 화면이에요.</h3>
+<p>일시적인 SDK 초기화 지연일 수 있습니다. 앱을 완전히 종료한 뒤 다시 실행해 주세요. 계속 발생하면 키 발급 페이지에서 "카카오맵 API" 사용 신청이 활성화되어 있는지 확인해 주세요.</p>
+
+<h2>📷 권한 안내</h2>
+
+<h3>어떤 권한이 필요한가요?</h3>
+<p>어디갔지는 다음 한 가지 권한만 사용합니다:</p>
+<ul>
+  <li><strong>사진 라이브러리</strong>: 메모ㆍ방문 기록에 사진을 첨부하실 때만 사용됩니다.</li>
+</ul>
+<p>그 외 위치, 카메라, 알림, 연락처, 마이크, 백그라운드 처리는 사용하지 않습니다.</p>
+
+<h3>사진 권한을 거부하면 어떻게 되나요?</h3>
+<p>사진 첨부 기능만 사용할 수 없게 됩니다. 그 외 모든 기능은 정상적으로 작동합니다. 권한은 iOS 설정 → 어디갔지에서 언제든 변경할 수 있습니다.</p>
+
+<h2>✉️ 문의 및 제안</h2>
+
+<p>버그 신고, 기능 제안, 기타 문의는 이메일로 보내주세요. 가능하면 사용 중인 iOS 버전, 기기 모델, 문제 발생 화면 캡처를 함께 보내주시면 빠른 확인에 도움이 됩니다.</p>
+
+<p><a href="mailto:jwjy1313@gmail.com">jwjy1313@gmail.com</a></p>
+
+<p>평일 기준 영업일 내 답변드리겠습니다.</p>
+
+<h2>🔗 관련 링크</h2>
+
+<ul>
+  <li><a href="https://jiyoon-choii.github.io/WhereDidIGo/">개인정보처리방침</a></li>
+  <li><a href="https://developers.kakao.com" target="_blank">카카오 개발자센터 (지도 API 키 발급)</a></li>
+</ul>
+
+<footer>
+© 2026 June · 어디갔지(MEmory)<br>
+최종 업데이트: 2026년 5월 14일
+</footer>
+
+</body>
+</html>
