@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>고객 지원 - 어디갔지(MEmory)</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    color: #1d1d1f;
+    line-height: 1.7;
+    background: #fff;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e5e7;
+  }
+  h1 { font-size: 32px; margin-bottom: 8px; }
+  .tagline { color: #6e6e73; font-size: 15px; }
+  h2 {
+    font-size: 22px;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    color: #1d1d1f;
+  }
+  h3 {
+    font-size: 17px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #007aff;
+  }
+  ol, ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: #007aff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .faq-item {
+    background: #f5f5f7;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  .faq-item h3 {
+    margin-top: 0;
+    color: #1d1d1f;
+  }
+  .faq-item h3::before {
+    content: "Q. ";
+    color: #007aff;
+    font-weight: 700;
+  }
+  .faq-answer::before {
+    content: "A. ";
+    color: #34c759;
+    font-weight: 700;
+  }
+  .contact-box {
+    background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+    color: white;
+    padding: 28px 32px;
+    border-radius: 14px;
+    margin-top: 32px;
+    text-align: center;
+  }
+  .contact-box h2 {
+    color: white;
+    margin-top: 0;
+    border: none;
+  }
+  .contact-box a {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .step-box {
+    background: #fff8e6;
+    border-left: 4px solid #ffcc00;
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin: 16px 0;
+  }
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e7;
+    text-align: center;
+    color: #6e6e73;
+    font-size: 14px;
+  }
+  footer a { color: #6e6e73; }
+  @media (max-width: 480px) {
+    body { padding: 24px 16px 60px; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 20px; }
+    .faq-item { padding: 16px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>어디갔지 (MEmory)</h1>
+  <p class="tagline">방문한 장소, 다가올 약속, 매일의 루틴을 기록하는 일상 아카이브</p>
+</header>
+
+<h2>📖 자주 묻는 질문</h2>
+
+<div class="faq-item">
+  <h3>어떤 앱인가요?</h3>
+  <p class="faq-answer">'어디갔지'는 다녀온 장소, 앞으로의 약속, 매일의 루틴, 그리고 일기를 한 곳에 기록할 수 있는 일상 아카이브 앱입니다. 외출 모드와 홈 모드를 구분해 집 밖과 집 안의 시간을 모두 담을 수 있습니다.</p>
+</div>
+
+<div class="faq-item">
+  <h3>로그인이 필요한가요?</h3>
+  <p class="faq-answer">아니요. 어디갔지는 별도의 회원가입이나 로그인 없이 사용할 수 있습니다. 모든 기록은 이용자의 기기 안에만 저장됩니다.</p>
+</div>
+
+<div class="faq-item">
+  <h3>내 데이터는 어디에 저장되나요?</h3>
+  <p class="faq-answer">모든 기록은 이용자의 기기 내부에만 저장됩니다. 외부 서버로 전송되거나 다른 사람에게 공유되지 않습니다. 앱을 삭제하면 저장된 모든 정보도 함께 삭제됩니다.</p>
+</div>
+
+<div class="faq-item">
+  <h3>지도 검색이 작동하지 않아요.</h3>
+  <p class="faq-answer">지도 검색 기능은 <strong>카카오 지도 API</strong>를 사용합니다. 이 기능을 사용하려면 카카오 개발자센터에서 발급받은 인증키를 앱에 입력해야 합니다. 키를 입력하지 않으면 장소를 직접 텍스트로 입력해서 기록할 수 있습니다.</p>
+</div>
+
+<div class="faq-item">
+  <h3>카카오 지도 API 키는 어떻게 발급받나요?</h3>
+  <p class="faq-answer">카카오 개발자센터에서 무료로 발급받을 수 있습니다. 아래 절차를 따라 진행해 주세요.</p>
+  <div class="step-box">
+    <ol>
+      <li><a href="https://developers.kakao.com" target="_blank">카카오 개발자센터(developers.kakao.com)</a> 접속 후 카카오 계정으로 로그인</li>
+      <li>상단 메뉴에서 <strong>'내 애플리케이션'</strong> → <strong>'애플리케이션 추가하기'</strong> 클릭</li>
+      <li>앱 이름, 사업자명 입력 후 저장 (개인 사용이면 본인 이름 입력)</li>
+      <li>생성된 앱의 <strong>'앱 키'</strong> 메뉴에서 <strong>REST API 키</strong> 또는 <strong>네이티브 앱 키</strong> 확인</li>
+      <li>발급받은 키를 어디갔지 앱의 설정 화면에 붙여넣기</li>
+    </ol>
+  </div>
+  <p>키 발급은 무료이며, 개인 용도라면 별도 비용이 발생하지 않습니다.</p>
+</div>
+
+<div class="faq-item">
+  <h3>외출 모드와 홈 모드는 무엇인가요?</h3>
+  <p class="faq-answer">외출 모드는 집 밖에서의 활동(다녀온 장소, 만남, 외부 일정)을, 홈 모드는 집 안에서의 시간(휴식, 루틴, 집안일 등)을 기록하는 모드입니다. 두 모드를 따로 보거나 통합해서 한 번에 볼 수 있어 일과 휴식을 균형 있게 돌아볼 수 있습니다.</p>
+</div>
+
+<div class="faq-item">
+  <h3>일기는 어떻게 생성되나요?</h3>
+  <p class="faq-answer">하루 동안 기록한 장소, 약속, 루틴 등을 모아 자동으로 일기 형태로 정리해드립니다. 직접 글을 쓰지 않아도 그날의 흐름을 한눈에 볼 수 있습니다.</p>
+</div>
+
+<div class="faq-item">
+  <h3>기록한 데이터를 백업할 수 있나요?</h3>
+  <p class="faq-answer">현재는 기기 내부 저장만 지원합니다. 백업 기능은 추후 업데이트에서 검토 중입니다. 새 기기로 옮기시기 전에는 데이터 이전이 어려우니 참고 부탁드립니다.</p>
+</div>
+
+<div class="faq-item">
+  <h3>알림은 어떻게 설정하나요?</h3>
+  <p class="faq-answer">앱 첫 실행 시 알림 권한을 허용하시거나, iOS의 <strong>설정 → 어디갔지 → 알림</strong> 메뉴에서 언제든 켜고 끌 수 있습니다.</p>
+</div>
+
+<div class="faq-item">
+  <h3>버그를 발견했어요. 어디로 알려야 하나요?</h3>
+  <p class="faq-answer">아래 이메일로 발견하신 내용을 보내주시면 빠르게 확인하고 다음 업데이트에 반영하겠습니다. 가능하면 사용 중인 iOS 버전, 기기 모델, 문제 발생 화면 캡처를 함께 보내주시면 도움이 됩니다.</p>
+</div>
+
+<div class="contact-box">
+  <h2>✉️ 문의 및 제안</h2>
+  <p>버그 신고, 기능 제안, 기타 문의는 이메일로 보내주세요.</p>
+  <p><a href="mailto:jwjy1313@gmail.com">jwjy1313@gmail.com</a></p>
+  <p style="font-size: 14px; opacity: 0.9; margin-top: 16px;">평일 기준 영업일 내 답변드리겠습니다.</p>
+</div>
+
+<h2>🔗 관련 링크</h2>
+<ul>
+  <li><a href="https://jiyoon-choii.github.io/WhereDidIGo/">개인정보처리방침</a></li>
+  <li><a href="https://developers.kakao.com" target="_blank">카카오 개발자센터 (지도 API 키 발급)</a></li>
+</ul>
+
+<footer>
+  <p>© 2026 June · 어디갔지(MEmory)<br>
+  최종 업데이트: 2026년 5월 14일</p>
+</footer>
+
+</body>
+</html>
